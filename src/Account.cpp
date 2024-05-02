@@ -1,13 +1,6 @@
 #include "Account.hpp"
 #include <string>
 
-Account::Account(std::string name, std::string cpf, std::string number) {
-    this->name = name;
-    this->cpf = cpf;
-    this->number = number;
-    this->balance = 0;
-}
-
 void Account::deposit(float amount) {
     if(amount > 0)
         balance += amount;
